@@ -1,20 +1,20 @@
 import './Home.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function Home() {
-    const [language, setLanguage] = useState(null);
+    // const [language, setLanguage] = useState(null);
     const [current, setCurrent] = useState("lang");
-    const [data, setData] = useState({});
+    // const [data, setData] = useState({});
     
     function handleLanguageSelection(event) {
         const selectedLanguage = event.currentTarget.dataset.lang;
-        setData(prevData => ({ ...prevData, language: selectedLanguage }));
+        // setData(prevData => ({ ...prevData, language: selectedLanguage }));
         setCurrent("location");
     }
 
     function handleLocationSelection(event) {
         const selectedLocation = event.target.value;
-        setData(prevData => ({ ...prevData, location: selectedLocation }));
+        // setData(prevData => ({ ...prevData, location: selectedLocation }));
         setCurrent("crop");
     }
 
