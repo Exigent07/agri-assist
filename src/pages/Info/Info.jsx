@@ -1,11 +1,16 @@
 import './Info.css';
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState, useCallback } from 'react';
 import { toast } from 'react-toastify';
 
 function Info({ callback }) {
     const [countdown, setCountdown] = useState(10);
     const countdownRef = useRef(null);
     const assistActivated = useRef(false);
+
+    const activateAssist = useCallback(() => {
+        toast.error("The feature is still under development, sorry for the inconvenience");
+        callback();
+    }, [callback]);
 
     function handleAcceptDecline(event) {
         const current = event.currentTarget;
@@ -20,11 +25,6 @@ function Info({ callback }) {
         } else {
             declineAssist();
         }
-    }
-
-    function activateAssist() {
-        toast.error("The feature is still under development, sorry for the inconvenience");
-        callback();
     }
 
     function declineAssist() {
@@ -49,7 +49,7 @@ function Info({ callback }) {
         }, 1000);
 
         return () => clearInterval(countdownRef.current);
-    }, [callback]);
+    }, [activateAssist]);
 
     return (
         <div className='Info'>
