@@ -1,0 +1,7 @@
+.App {
+  text-align: center;
+  min-height: 100dvh;
+  max-width: 100dvw;
+  background-color: var(--main-bg);
+  color: var(--main-text-color);
+}

@@ -1,0 +1,64 @@
+.Info {
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.Info h2 {
+    font-family: var(--title-font);
+}
+
+.Info p {
+    font-family: var(--para-font);
+}
+
+.Info .count-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    border: solid 2px red;
+}
+
+.Info .assist-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.Info .assist-btns button {
+    border: solid 1px transparent;
+    font-family: var(--title-font);
+    font-weight: bold;
+    background-color: #fff;
+    padding: 1em 2.5em;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.Info .assist-btns button:first-child {
+    background-color: green;
+    color: white;
+}
+
+.Info .assist-btns button:last-child {
+    background-color: red;
+    color: white;
+}
+
+.Info .assist-btns button:hover {
+    border: solid 1px #fff;
+    background-color: #fff;
+    color: black;
+}
+
+.Info .assist-btns button:active {
+    opacity: 0.1;
+}

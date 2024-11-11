@@ -1,0 +1,63 @@
+.Home {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    min-height: 90dvh;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+    max-width: 90dvw;
+}
+
+.Home div.container {
+    font-family: var(--title-font);
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    padding-bottom: 2em;
+}
+
+.Home div.container h1 {
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.Home div.container p {
+    padding-bottom: 0.2em;
+    font-family: var(--para-font);
+}
+
+.Home .container button, 
+.Home .container select {
+    width: 18em;
+    font-family: var(--para-font);
+    color: white;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1em;
+    cursor: pointer;
+    border: solid 2px black;
+    font-size: 1.5em;
+    padding: 2em 0;
+}
+
+.Home .container button:hover, .Home .container select:hover {
+    background-color: var(--hover-color);
+    border: solid 2px white;
+}
+
+.Home .container img {
+    height: 15em;
+    width: 15em;
+    border: solid 2px white;
+}

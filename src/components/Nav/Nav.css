@@ -1,0 +1,56 @@
+.Nav {
+    height: 6em;
+    width: 100%;
+    background-color: var(--secondary-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Nav .nav-links {
+    padding-left: 1em;
+    font-family: var(--para-font);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    list-style: none;
+    cursor: pointer;
+}
+
+.Nav .nav-links li:hover {
+    color: var(--hover-color);
+}
+
+.Nav .nav-logo img {
+    height: 7em;
+}
+
+.Nav .nav-actions {
+    padding-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.Nav .nav-actions select, .Nav .nav-actions button {
+    border: solid 2px black;
+    background-color: #fff;
+    outline: none;
+    box-shadow: none;
+    font-size: 1.1em;
+    font-family: var(--para-font);
+    font-weight: bold;
+    cursor: pointer;
+    width: 6em;
+    text-align: center;
+    padding: 0.4em 0em;
+}
+
+.Nav .nav-actions select:hover, .Nav .nav-actions button:hover {
+    background-color: var(--hover-color);
+}
+
